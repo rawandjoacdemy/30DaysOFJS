@@ -1,0 +1,26 @@
+.map {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-image: url('/WorldCountries2/images/map_image.jpg');
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    justify-items: center;
+}
+
+.map::before {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.countries-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

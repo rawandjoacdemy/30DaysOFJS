@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>World Countries Data</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	<link rel="stylesheet" href="/WorldCountries/style.css" />
+</head>
+
+<body>
+	<header id="countries">
+		<h2>World Countries Data</h2>
+		<p class="subtitle"></p>
+		<p class="feedback"></p>
+	</header>
+	<main>
+
+		<div class="wrapper">
+			<div class="graph-buttons">
+				<button class="population" onclick="ShowPopulation()">Population</button>
+				<button class="languages" onclick="ShowLanguages()">Languages</button>
+			</div>
+			<h4 class="graph-title">most spoken languages</h4>
+
+			<div class="graphs">
+				<div class="graph-wrapper" id="stat">
+                    <ul class="countries-list">
+					</ul>
+                    <ul class="countries-population">
+						
+					</ul>
+                    <ul class="population-number">
+						
+					</ul>
+                </div>
+			</div>
+		</div>
+		<!-- <div class="population-wrapper">
+			<div class="graph-buttons">
+				<button class="population" onclick="ShowPopulation()">Population</button>
+				<button class="languages">Languages</button>
+			</div>
+			<h4 class="graph-title">most spoken languages</h4>
+
+			<div class="graphs">
+				<div class="graph-wrapper" id="stat">
+                    <ul class="countries-list">
+					</ul>
+                    <ul class="countries-population">
+						
+					</ul>
+                    <ul class="population-number">
+						
+					</ul>
+                </div>
+			</div>
+		</div> -->
+	</main>
+
+	<script src="/WorldCountries/data.js"></script>
+	<script src="/WorldCountries/main.js"></script>
+
+</body>
+
+</html>

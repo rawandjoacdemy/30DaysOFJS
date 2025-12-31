@@ -1,0 +1,13 @@
+
+.text{
+    animation: fadeIn 2000ms;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

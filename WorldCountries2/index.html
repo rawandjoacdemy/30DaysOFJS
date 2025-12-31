@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>World Countries List</title>
+    <link rel="stylesheet" href="/WorldCountries2/style.css">
+</head>
+
+<body>
+	<h1>World Countries List</h1>
+	<h2>Total Number of countries</h2>
+
+    <input onchange="Search()" type="text" name="search" id="search">
+    <button onclick="Search()">search</button>
+    <button onclick="SearchFirst()">search starting word</button>
+    <button onclick="Sort()">sort</button>
+    <div class="countries-container">
+    </div>
+	<script src="./data.js"></script>
+	<script src="./main.js"></script>
+
+</body>
+
+</html>

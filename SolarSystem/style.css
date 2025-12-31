@@ -1,0 +1,43 @@
+body{
+    background-image: url(/SolarSystem/images/galaxy.gif);
+    background-position: center;
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+header{
+    justify-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.planet-image{
+    width: 250px;
+    height: 250px;
+}
+
+.flex-container{
+    width: 50% ;
+    background-color: rgba(128, 128, 128, 0.671);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    height: 500px;
+    gap: 50px;
+}
+
+.description{
+    background-color: rgba(0, 0, 0, 0.495);
+    height: 60px;
+    padding: 20px;
+    visibility: hidden;
+}
+
+.inputs{
+    margin-top: 150px;
+}
