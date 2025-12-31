@@ -1,5 +1,7 @@
 const country = document.querySelector('.countries-container');
+const subtitle = document.querySelector('.subtitle');
 const searchInput = document.getElementById('search');
+
 
 
 
@@ -12,10 +14,12 @@ countries.forEach(element => {
 });
 
 function Search(){
+    let count = 0;
     country.innerHTML = '';
     console.log(searchInput.value)
     countries.forEach(element =>{
         if(element.toUpperCase().includes(searchInput.value.toUpperCase())){
+            count+=1;
             country.innerHTML += `
             <div class="map">
             <div class="country-name" id="${element}">${element}</div>
@@ -23,8 +27,8 @@ function Search(){
             `
         }
     })
+    subtitle.textContent += ` containing ${searchInput.value} is ${count}`
 }
-// search first word slice ' '
 
 function SearchFirst(){
     country.innerHTML = '';

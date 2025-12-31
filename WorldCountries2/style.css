@@ -1,12 +1,19 @@
+body{
+    font-family: Montserrat;
+}
 .map {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-image: url('/WorldCountries2/images/map_image.jpg');
     background-position: center;
     background-size: cover;
     align-content: center;
     justify-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    z-index: 0;
 }
 
 .map::before {
@@ -15,6 +22,7 @@
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 
 
@@ -22,5 +30,46 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    margin: auto;
+    width: 75%;
+}
+
+.hero{
+    background-image: url('/WorldCountries2/images/globe-2.jpg');
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    justify-items: center;
+    color: white;
+    height: 40vh;
+    margin-bottom: 20px;
+    z-index: 0;
+    position: relative;
+}
+
+.hero::before {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+.btnDiv button{
+    background-color: #875AE3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+input{
+    border-radius: 50px;
+    padding: 5px 20px;
+    border: none;
+    width: 350px;
+    height: 20px;
 }

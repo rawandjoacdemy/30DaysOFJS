@@ -4,16 +4,23 @@
 <head>
 	<title>World Countries List</title>
     <link rel="stylesheet" href="/WorldCountries2/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
 </head>
 
 <body>
-	<h1>World Countries List</h1>
-	<h2>Total Number of countries</h2>
-
-    <input onchange="Search()" type="text" name="search" id="search">
-    <button onclick="Search()">search</button>
-    <button onclick="SearchFirst()">search starting word</button>
-    <button onclick="Sort()">sort</button>
+    <header class="hero">
+        <h1 style="font-size: 58px;">World Countries List</h1>
+        <h2 class="subtitle">Total Number of countries</h2>
+        <div class="btnDiv">
+            <button onclick="Search()">search</button>
+            <button onclick="SearchFirst()">search starting word</button>
+            <button onclick="Sort()">sort</button>
+        </div>
+        <div style="justify-content: center; margin-top: 20px;">
+            <input onchange="Search()" type="text" name="search" id="search">
+        </div>
+    </header>
     <div class="countries-container">
     </div>
 	<script src="./data.js"></script>
