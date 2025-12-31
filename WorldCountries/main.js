@@ -1,6 +1,7 @@
 const countriesList = document.querySelector('.countries-list');
 const countriesBar = document.querySelector('.countries-population');
 const population = document.querySelector('.population-number');
+const graphTitle = document.querySelector('.graph-title')
 
 
 
@@ -36,6 +37,7 @@ function mergeSort(arr){
 }
 
 function ShowPopulation(){
+    graphTitle.textContent = '10 Most populated countries'
     countriesList.innerHTML = '';
     countriesBar.innerHTML = '';
     population.innerHTML  = '';
@@ -45,7 +47,6 @@ function ShowPopulation(){
     countriesBar.innerHTML +=  `<li class="bar" style = "width: 100%"></li>`
     population.innerHTML += `<li>${totalWorldPopulation}</li>`
     
-    console.log("total = "+ totalWorldPopulation)
     const sortedCountries = mergeSort(countries_data);
     
     const topTen = sortedCountries.slice(0, 10);
@@ -53,7 +54,7 @@ function ShowPopulation(){
     
     topTen.forEach(country => {
         countriesList.innerHTML += `<li>${country.name}</li>`;
-        countriesBar.innerHTML +=  `<li class="bar" style = "width: ${country.population/10000000}px"></li>`
+        countriesBar.innerHTML +=  `<li class="bar" style = "width: ${(country.population/7758589152)*100}%"></li>`
         population.innerHTML += `<li>${country.population}</li>`
     });
 
@@ -61,7 +62,7 @@ function ShowPopulation(){
 
 
 function ShowLanguages(){
-
+     graphTitle.textContent = '10 Most spoken languages in the world'
     let topTen = mostFrequent(countries_data);
     countriesList.innerHTML = '';
     countriesBar.innerHTML = '';
@@ -71,7 +72,7 @@ function ShowLanguages(){
     
     topTen.forEach(language => {
         countriesList.innerHTML += `<li>${language[0]}</li>`;
-        countriesBar.innerHTML +=  `<li class="bar" style = "width: ${language[1] * 6}px"></li>`
+        countriesBar.innerHTML +=  `<li class="bar" style = "width: ${(language[1]/123)*100}%"></li>`
         population.innerHTML += `<li>${language[1]}</li>`
     });
 
@@ -102,6 +103,7 @@ function mostFrequent(countries_data){
     let frequencyArray = Array.from(frequencyMap.entries())
     
     frequencyArray.sort((a,b) => b[1] - a[1])
+    
     
     let topTen = frequencyArray.splice(0,10)
     
