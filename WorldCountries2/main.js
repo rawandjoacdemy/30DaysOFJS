@@ -15,6 +15,7 @@ countries.forEach(element => {
 
 function Search(){
     let count = 0;
+    subtitle.textContent = 'Total Number of countries ';
     country.innerHTML = '';
     console.log(searchInput.value)
     countries.forEach(element =>{

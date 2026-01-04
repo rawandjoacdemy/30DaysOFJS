@@ -5,7 +5,7 @@ body{
     position: relative;
     width: 200px;
     height: 200px;
-    background-image: url('/WorldCountries2/images/map_image.jpg');
+    background-image: url('images/map_image.jpg');
     background-position: center;
     background-size: cover;
     align-content: center;
@@ -37,7 +37,7 @@ body{
 }
 
 .hero{
-    background-image: url('/WorldCountries2/images/globe-2.jpg');
+    background-image: url('images/globe-2.jpg');
     background-position: center;
     background-size: cover;
     align-content: center;
