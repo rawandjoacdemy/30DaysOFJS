@@ -1,0 +1,23 @@
+body{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+    margin: auto;
+}
+
+.form input{
+    padding: 10px 20px;
+}
+
+.submit{
+    width: 20%;
+    margin: auto;
+}
