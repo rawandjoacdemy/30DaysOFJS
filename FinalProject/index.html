@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Final Project</title>
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+</head>
+<body>
+	<header>
+		<h1>World Countries Data</h1>
+		<p class="subtitle"></p>
+	</header>
+
+	<section class="actions">
+
+		<div class="searchbar">
+			<input type="text" placeholder="Search" onchange="Search()" id="search">
+		</div>
+	
+		<div class="btns">
+			<button class="sortBtn">Sort</button>
+			<button class="sortbyPopBtn">Sort By Population</button>
+			<button class="sortbyCapBtn">Sort By Capital</button>
+			<button class="population-chart">Population Chart</button>
+		</div>
+	</section>
+
+	<main class="countries-container">
+		
+	</main>
+
+	<section class="population">
+		<div class="wrapper">
+			<div class="graph-buttons">
+				<button class="population" onclick="console.log('clicked')">Population</button>
+				<button class="languages" onclick="console.log('clicked')">Languages</button>
+			</div>
+			<h4 class="graph-title">most spoken languages</h4>
+			</div>
+
+			<div class="graphs">
+				<div class="graph-wrapper" id="stat">
+                    <ul class="countries-list"></ul>
+                    <ul class="countries-population"></ul>
+                    <ul class="population-number"></ul>
+                </div>
+			</div>
+
+	</section>
+	<script src="data.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

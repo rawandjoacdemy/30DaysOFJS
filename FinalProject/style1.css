@@ -1,0 +1,61 @@
+body{
+    font-family: Montserrat;
+}
+.countries-list{
+    list-style-type: none;
+}
+
+.bar{
+    content: '';
+    height: 20px;
+    background-color: orange;
+    margin: 10px 0;
+}
+
+.countries-list li{
+    margin: 10px 0;
+}
+
+.countries-population{
+    list-style-type: none;
+}
+
+.population-number li{
+    list-style-type: none;
+    margin: 12px 0;
+}
+
+.graph-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+header{
+    justify-items: center;
+    background-color: rgba(128, 128, 128, 0.15);
+    padding: 20px 0;
+    margin-bottom: 20px ;
+}
+header h1{
+    color: orange;
+    font-size: 42px;
+}
+
+.wrapper{
+    justify-items: center;
+}
+
+.graphs{
+    justify-items: center;
+    background-color: rgba(128, 128, 128, 0.15);
+}
+
+.graph-buttons button{
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+}
+
+.population{
+    margin-top: 20px;
+}
