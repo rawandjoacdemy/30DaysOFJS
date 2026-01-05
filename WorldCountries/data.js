@@ -8,7 +8,7 @@ const countries_data = [
 					"Turkmen"
 			],
 			"population": 40218234,
-			"flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+			"flag": "https://flagcdn.com/af.svg",
 			"region": "Asia",
 			"area": 652230
 	},
@@ -1278,18 +1278,6 @@ const countries_data = [
 			"area": 572
 	},
 	{
-			"name": "Israel",
-			"capital": "Jerusalem",
-			"languages": [
-					"Hebrew (modern)",
-					"Arabic"
-			],
-			"population": 9216900,
-			"flag": "https://flagcdn.com/il.svg",
-			"region": "Asia",
-			"area": 20770
-	},
-	{
 			"name": "Italy",
 			"capital": "Rome",
 			"languages": [
@@ -1960,7 +1948,7 @@ const countries_data = [
 	},
 	{
 			"name": "Palestine, State of",
-			"capital": "Ramallah",
+			"capital": "Jerusalem",
 			"languages": [
 					"Arabic"
 			],
@@ -2819,7 +2807,7 @@ const countries_data = [
 			"name": "Western Sahara",
 			"capital": "El Aaiún",
 			"languages": [
-					"Spanish"
+					"Arabic"
 			],
 			"population": 510713,
 			"flag": "https://flagcdn.com/eh.svg",
